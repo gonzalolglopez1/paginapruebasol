@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 30px;
+    padding: 28px;
+    
+    
+}
+.imagenfoto{
+    height: 400px;    
+    background-position: top;
+    background-size: cover;
+    background-image: url(portada.jpeg);
+}
+
+nav{
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    justify-content: space-between;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 20px;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ul, li{
+    padding: 15px;
+}
+
+  
+.contenedorflex{
+    display: flex;
+}
+
+p{
+    width: 80%;
+}
+
+   
+
+
+h3{
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.texto1{
+    margin: 0 60px;
+}
+
+.imagenmain2 , .fotomain{
+ margin:20px;   
+ height: 700px;
+}
+
+
+footer{
+    display: flex;
+    height: 200px;
+    background-color: #f3ecae;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0 40px;
+}
+
+.redes a{
+    margin: 0 60px;
+    color: rgb(99, 93, 82);
+    
+}
+i{
+    font-size: 25px;
+    margin: 0 5px;
+    color: #000;
+    
+}
