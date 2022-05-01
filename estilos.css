@@ -1,10 +1,8 @@
-
-
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -29,9 +27,13 @@ h2 {
 }
 
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: rgb(253, 173, 173);
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 main {
@@ -49,6 +51,8 @@ a {
     text-decoration: none;
     font-size: 18px;
     border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.4s linear;
+    -o-transition: border-bottom 0.4s linear;
     transition: border-bottom 0.4s linear;
 
 }
@@ -72,8 +76,12 @@ li {
 
 
 .contenedorflex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-grow: inherit;
+    -webkit-box-flex: inherit;
+        -ms-flex-positive: inherit;
+            flex-grow: inherit;
 }
 
 p {
@@ -104,11 +112,17 @@ h3 {
 
 
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 200px;
     background-color: rgb(139, 139, 253);
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 h4 {
@@ -137,14 +151,22 @@ i {
 
 .contenedorflex2{
     margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+    
+        -ms-flex-pack: justify;
+    
+            justify-content: space-between;
 }
 
 .cursos:hover{
     background-color: rgb(253, 173, 173);
-    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+        -ms-transform: scale(1.2,1.2);
+            transform: scale(1.2,1.2);
 }
 
 .cursos{
@@ -158,6 +180,8 @@ i {
     
     text-align: center;
     font-size: 12px;
+    -webkit-transition: background-color 0.2s ;
+    -o-transition: background-color 0.2s ;
     transition: background-color 0.2s ;
 }
 
@@ -170,15 +194,24 @@ i {
     
     width: 25%;
     display: inline-block;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin: 0 auto;
 }
 
 .cajacursos{
     width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
  
     justify-self: flex-end;
 }
@@ -190,8 +223,13 @@ body{
         width: 390px;
     }
     nav {
-        display: flex;
-        flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;        
+        -webkit-box-orient: vertical;        
+        -webkit-box-direction: normal;        
+            -ms-flex-direction: column;        
+                flex-direction: column;
     }
 
     .texto1{
@@ -200,10 +238,17 @@ body{
     }
      
     .contenedorflex{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .imagenmain2{
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
 }
