@@ -224,6 +224,7 @@ i {
     main,
     footer {
         width: 390px;
+        height: auto;
     }
 
     nav {
