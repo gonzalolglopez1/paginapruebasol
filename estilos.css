@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -219,8 +222,8 @@ i {
 @media screen and (max-width: 500px) { 
 
 
-body{
-        width: 390px;
+body, header, main, footer{
+        width: 375px;
     }
     nav {
         display: -webkit-box;
@@ -247,8 +250,38 @@ body{
                 flex-direction: column;
     }
     .imagenmain2{
+        
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
+           
+    }
+    footer{
+        width: 390px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .redes{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: stretch;
+            -ms-flex-pack: stretch;
+                justify-content: stretch;
+        width: 390px; }
+
+    .redes a{
+        width: 30px;
+        margin: 20px;
+        
+    }
+    .fotomain{
+        width: 400px;
     }
 }
